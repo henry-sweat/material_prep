@@ -87,7 +87,7 @@ if __name__ == '__main__':
         # Filter df_order for machine, sort by est. total hrs descending
         df_machine = df_order[df_order['Machine'] == machine].sort_values(by='Est. Total Hrs', ascending=False)
 
-        # Skip if sum of est hours on machine < 36
+        # Skip if sum of est hours on machine < MAX_HOURS
         if df_machine['Est. Total Hrs'].sum() < MAX_HOURS:
             continue
 
