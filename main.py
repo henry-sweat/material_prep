@@ -51,7 +51,7 @@ def reassign_overflow(arg_df_machine, arg_overflow_machine):
     return arg_df_machine
 
 
-# Press the green button in the gutter to run the script.
+# MAIN
 if __name__ == '__main__':
     # Get user input for order date
     order_date = get_order_date()
